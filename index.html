@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="Home-1.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script type="text/javascript">
+  // $( function() {
+  //   $( "#dialog" ).dialog({
+  //     autoOpen: false,
+  //     show: {
+  //       effect: "blind",
+  //       duration: 1000
+  //     },
+  //     hide: {
+  //       effect: "explode",
+  //       duration: 1000
+  //     }
+  //   });
+ 
+  //   $( "#opener" ).on( "click", function() {
+  //     $( "#dialog" ).dialog( "open" );
+  //   });
+  // } );
+  </script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 5.6.8, nicepage.com">
     <meta name="referrer" content="origin">
@@ -28,6 +48,80 @@
 		"name": "",
 		"logo": "images/default-logo.png"
 }</script>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+</style>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Home 1">
     <meta property="og:type" content="website">
@@ -153,7 +247,8 @@
                     <p class="u-align-left u-text u-text-4"> &nbsp;<span class="u-file-icon u-icon"><img src="images/566235.png" alt=""></span>&nbsp;Seats: 4&nbsp;&nbsp;&nbsp;<span class="u-file-icon u-icon"><img src="images/903530.png" alt=""></span>&nbsp; ​Suitcase: 2
                     </p>
                     <p class="u-align-left u-text u-text-5"> Quite popular with budget travelers visiting the US(usually for short term travel plans), economy cars fall in the category of low-cost rental solutions. Not only inexpensive these rental vehicles are also fuel-efficient.</p>
-                    <a href="#" class="u-active-palette-1-dark-2 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-2 u-palette-1-base u-radius-50 u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Book now</a>
+                    <button id="myBtn" class="u-active-palette-1-dark-2 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-2 u-palette-1-base u-radius-50 u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Book now</button>
+                    <!-- <button id="myBtn">Open Modal</button> -->
                   </div>
                 </div>
               </div>
@@ -167,7 +262,7 @@
                     <p class="u-align-left u-text u-text-7"> &nbsp;<span class="u-file-icon u-icon"><img src="images/566235.png" alt=""></span>&nbsp;Seats: 5&nbsp;&nbsp;&nbsp;<span class="u-file-icon u-icon"><img src="images/903530.png" alt=""></span>&nbsp; ​Suitcase: 2
                     </p>
                     <p class="u-align-left u-text u-text-8"> Customers visiting America rent luxury cars for business, vacations and other special life occasions like anniversaries. They are used mainly for the comfort and the style quotient they add to the trip.</p>
-                    <a href="#" class="u-active-palette-1-dark-2 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-2 u-palette-1-base u-radius-50 u-btn-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Book now</a>
+                    <button id="myBtn2" class="u-active-palette-1-dark-2 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-2 u-palette-1-base u-radius-50 u-btn-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Book now</button>
                   </div>
                 </div>
               </div>
@@ -181,7 +276,7 @@
                     <p class="u-align-left u-text u-text-10"> &nbsp;<span class="u-file-icon u-icon"><img src="images/566235.png" alt=""></span>&nbsp;Seats: 4&nbsp;&nbsp;&nbsp;<span class="u-file-icon u-icon"><img src="images/903530.png" alt=""></span>&nbsp; ​Suitcase: 2
                     </p>
                     <p class="u-align-left u-text u-text-11"> Quite popular with budget travelers visiting the US(usually for short term travel plans), economy cars fall in the category of low-cost rental solutions. Not only inexpensive these rental vehicles are also fuel-efficient.</p>
-                    <a href="#" class="u-active-palette-1-dark-2 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-2 u-palette-1-base u-radius-50 u-btn-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Book now</a>
+                    <button id="myBtn3" class="u-active-palette-1-dark-2 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-2 u-palette-1-base u-radius-50 u-btn-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Book now</button>
                   </div>
                 </div>
               </div>
@@ -195,7 +290,7 @@
                     <p class="u-align-left u-text u-text-13"> &nbsp;<span class="u-file-icon u-icon"><img src="images/566235.png" alt=""></span>&nbsp;Seats: 4&nbsp;&nbsp;&nbsp;<span class="u-file-icon u-icon"><img src="images/903530.png" alt=""></span>&nbsp; ​Suitcase: 2
                     </p>
                     <p class="u-align-left u-text u-text-14"> Road trips, filled with activities like camping and water sports, are best planned with SUV rentals. Most families visiting the US, rent SUVs for safe yet luxurious trips to places like Disney World &amp; National Parks like Grand Canyon.</p>
-                    <a href="#" class="u-active-palette-1-dark-2 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-2 u-palette-1-base u-radius-50 u-btn-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Book now</a>
+                    <button id="myBtn4" class="u-active-palette-1-dark-2 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-2 u-palette-1-base u-radius-50 u-btn-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Book now</button>
                   </div>
                 </div>
               </div>
@@ -209,7 +304,7 @@
                     <p class="u-align-left u-text u-text-16"> &nbsp;<span class="u-file-icon u-icon"><img src="images/566235.png" alt=""></span>&nbsp;Seats: 7/8&nbsp; &nbsp;<span class="u-file-icon u-icon"><img src="images/903530.png" alt=""></span>&nbsp; ​Suitcase: 5
                     </p>
                     <p class="u-align-left u-text u-text-17"> A van or a minivan rental gives you legroom &amp; luggage space that other car categories don't. On the basis of seating capacity, they are classified as 7-passenger, 8-passenger, 9-passenger, 10-passenger, 12-passenger, and 15-passenger van and minivan rentals.</p>
-                    <a href="#" class="u-active-palette-1-dark-2 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-2 u-palette-1-base u-radius-50 u-btn-5" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Book now</a>
+                    <button id="myBtn5" class="u-active-palette-1-dark-2 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-2 u-palette-1-base u-radius-50 u-btn-5" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Book now</button>
                   </div>
                 </div>
               </div>
@@ -416,6 +511,120 @@ Regards !">
         </div>
       </div>
     </section>
+
+    <!-- The Modal 1 -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Book Pages(Economy)</h2>
+    </div>
+    <div class="modal-body">
+      <p>Welcome to our website for Economy vihicle</p>
+      <p>Please input your Email Address.</p>
+      <input style="width: 100%;" type="text" name="" placeholder="for example: 123@gmail.com">
+      <p></p>
+      
+    </div>
+    <div class="modal-footer">
+      <h3></h3>
+      <button id="myBtn_sendMail" style="margin-left: auto;" class="u-active-palette-2-light-2 u-align-right u-border-none u-btn u-btn-round u-button-style u-hover-palette-2-light-2 u-palette-2-base u-radius-50 u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Send MSG Now</button>
+    </div>
+  </div>
+</div>
+
+    <!-- The Modal 2 -->
+<div id="myModal2" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close close2">&times;</span>
+      <h2>Book Pages(Luxury)</h2>
+    </div>
+
+    <div class="modal-body">
+      <p>Welcome to our website for Luxury vihicle</p>
+      <p>Please input your Email Address.</p>
+      <input style="width: 100%;" type="text" name="" placeholder="for example: 123@gmail.com">
+      <p></p>
+      
+    </div>
+    <div class="modal-footer">
+      <h3></h3>
+      <button id="myBtn_sendMail2" style="margin-left: auto;" class="u-active-palette-2-light-2 u-align-right u-border-none u-btn u-btn-round u-button-style u-hover-palette-2-light-2 u-palette-2-base u-radius-50 u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Send MSG Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal 3 -->
+<div id="myModal3" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close close3">&times;</span>
+      <h2>Book Pages(Convertible)</h2>
+    </div>
+
+    <div class="modal-body">
+      <p>Welcome to our website for Convertible vihicle</p>
+      <p>Please input your Email Address.</p>
+      <input style="width: 100%;" type="text" name="" placeholder="for example: 123@gmail.com">
+      <p></p>
+      
+    </div>
+    <div class="modal-footer">
+      <h3></h3>
+      <button id="myBtn_sendMail2" style="margin-left: auto;" class="u-active-palette-2-light-2 u-align-right u-border-none u-btn u-btn-round u-button-style u-hover-palette-2-light-2 u-palette-2-base u-radius-50 u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Send MSG Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal 4 -->
+<div id="myModal4" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close close4">&times;</span>
+      <h2>Book Pages(SUV)</h2>
+    </div>
+
+    <div class="modal-body">
+      <p>Welcome to our website for SUV vihicle</p>
+      <p>Please input your Email Address.</p>
+      <input style="width: 100%;" type="text" name="" placeholder="for example: 123@gmail.com">
+      <p></p>
+      
+    </div>
+    <div class="modal-footer">
+      <h3></h3>
+      <button id="myBtn_sendMail2" style="margin-left: auto;" class="u-active-palette-2-light-2 u-align-right u-border-none u-btn u-btn-round u-button-style u-hover-palette-2-light-2 u-palette-2-base u-radius-50 u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Send MSG Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal 5 -->
+<div id="myModal5" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close close5">&times;</span>
+      <h2>Book Pages(Van/Minivan)</h2>
+    </div>
+
+    <div class="modal-body">
+      <p>Welcome to our website for Van/Minivan vihicle</p>
+      <p>Please input your Email Address.</p>
+      <input style="width: 100%;" type="text" name="" placeholder="for example: 123@gmail.com">
+      <p></p>
+      
+    </div>
+    <div class="modal-footer">
+      <h3></h3>
+      <button id="myBtn_sendMail2" style="margin-left: auto;" class="u-active-palette-2-light-2 u-align-right u-border-none u-btn u-btn-round u-button-style u-hover-palette-2-light-2 u-palette-2-base u-radius-50 u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">Send MSG Now</button>
+    </div>
+  </div>
+</div>
     
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-be46"><div class="u-clearfix u-sheet u-sheet-1">
@@ -430,8 +639,8 @@ Company style: Golden<br>
 Support Regions: In the world</p>
       </div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="" target="_blank">
-        <span>The best Top Website</span>
+      <a class="u-link" href="#" target="_blank">
+        <span>The best website to provide second vehicle for individuals in the world/span>
       </a>
       <p class="u-text">
         <span>created for</span>
@@ -440,5 +649,120 @@ Support Regions: In the world</p>
         <span>individuals and smiles</span>
       </a>. 
     </section>
+    <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";}
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+// Get the modal2
+var modal2 = document.getElementById("myModal2");
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+  console.log("213");
+  modal2.style.display = "block";}
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";}
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal2) {
+//     modal2.style.display = "none";
+//   }
+// }
+
+// Get the modal3
+var modal3 = document.getElementById("myModal3");
+// Get the button that opens the modal
+var btn3 = document.getElementById("myBtn3");
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close3")[0];
+// When the user clicks the button, open the modal 
+btn3.onclick = function() {
+  console.log("213");
+  modal3.style.display = "block";}
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+  modal3.style.display = "none";}
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal3) {
+//     modal3.style.display = "none";
+//   }
+// }
+
+// Get the modal4
+var modal4 = document.getElementById("myModal4");
+// Get the button that opens the modal
+var btn4 = document.getElementById("myBtn4");
+// Get the <span> element that closes the modal
+var span4 = document.getElementsByClassName("close4")[0];
+// When the user clicks the button, open the modal 
+btn4.onclick = function() {
+  console.log("213");
+  modal4.style.display = "block";}
+// When the user clicks on <span> (x), close the modal
+span4.onclick = function() {
+  modal4.style.display = "none";}
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal4) {
+//     modal4.style.display = "none";
+//   }
+// }
+
+// Get the modal5
+var modal5 = document.getElementById("myModal5");
+// Get the button that opens the modal
+var btn5 = document.getElementById("myBtn5");
+// Get the <span> element that closes the modal
+var span5 = document.getElementsByClassName("close5")[0];
+// When the user clicks the button, open the modal 
+btn5.onclick = function() {
+
+  modal5.style.display = "block";}
+// When the user clicks on <span> (x), close the modal
+span5.onclick = function() {
+  modal5.style.display = "none";}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  console.log(event.target);
+  if (event.target == modal5) {
+    modal5.style.display = "none";
+  } else if(event.target == modal4) {
+    modal4.style.display = "none";
+  } else if(event.target == modal3) {
+    modal3.style.display = "none";
+  } else if(event.target == modal2) {
+    modal2.style.display = "none";
+  } else if(event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
   
 </body></html>
